@@ -184,16 +184,6 @@ def create_app(test_config=None):
     @app.route('/home/homepage', methods=('GET', 'POST'))
     def homepage():
         key='G43VZ2WHVRWPNNW9'
-        # company=['OXY','EOG','APC','APA','COP','PXD']
-        # s_list={}
-        # for symbol in company:
-        #     url='https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol='+symbol+'&apikey='+key
-        #     response = requests.get(url).json()
-
-        #     response = response['Global Quote']
-        #     print(response)
-        #     s_list[symbol]=[response['05. price'],response['09. change']]
-        # print (s_list)
         labels = [
                 'JAN', 'FEB', 'MAR', 'APR',
                 'MAY', 'JUN', 'JUL', 'AUG',
@@ -226,7 +216,6 @@ def create_app(test_config=None):
                 response = requests.get(url).json()
                 response = response['Monthly Time Series']
                 current=list(response.keys())[0]
-                # print(current)
 
                 #plot graph
 
@@ -240,13 +229,15 @@ def create_app(test_config=None):
                 x=x[::-1]
                 y=y[::-1]
                 return render_template('home/stocks.html', name=name, max=200, labels=x, values=y)
+                # articles.html
             elif request.form.get('button',False)=='articles':
                 
                 newsapi = NewsApiClient(api_key='468fffd8bd8f4768985cf072a1a59e70')
                 response=(newsapi.get_everything(q=name))
                 a_dict=response['articles']
-                # print (a_dict)
+             
                 return render_template('home/articles.html', name=name, articles=a_dict)
+                # earnings call transcript
             elif request.form.get('button',False)=='ect':
                 with open("call_transcript.txt") as file:
                     data = file.readlines()
@@ -294,6 +285,7 @@ def create_app(test_config=None):
 
 
                 return render_template('home/transcript.html', names=names, ect=data,set=zip(values, labels, colors),legend='Frequency of participants speaking', max=17000, participant=participant)
+            # sentiment analysis
             elif request.form.get('button',False)=='sentiment':
                 f_good="oxy_good.txt"
                 f_bad='oxy_bad.txt'
