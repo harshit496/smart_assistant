@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1 align="center">{% block title %}Earnings Call Transcript{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+
+<p align="center" ><a href="https://seekingalpha.com/article/4240792-occidental-petroleum-corporation-oxy-ceo-vicki-hollub-q4-2018-results-earnings-call?part=single">Link to Earnings Call Transcript</a></p>
+
+<div style="grid-template-columns: auto auto; display: grid;">
+<div style="padding: 15px;">
+	{% for name in names %}
+     {% if name=='Company Participants' %}
+     	<p ><u>{{name}}</u></p>
+     {% elif name=='Conference Call Participants'%}
+     <p ><u>{{name}}</u></p>
+	{% else %}
+     	<p >{{name}}</p>
+     {% endif %}
+    
+{% endfor %}
+</div>
+
+
+<div >
+	<h1 align="center">Analysis</h1>
+
+	<head>
+  <meta charset="utf-8" />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+</head>
+
+<body>
+	<p align="center">{{legend}}</p>
+    <canvas id="chart" width="400" height="400"></canvas>
+    <script>
+      var pieData = [
+        {% for item, label, colors in set %}
+          {
+            value: {{item}},
+            label: "{{label}}",
+            color : "{{colors}}"
+          },
+        {% endfor %}
+
+      ];
+      // get bar chart canvas
+      var mychart = document.getElementById("chart").getContext("2d");
+      steps = 10
+      max = {{ max }}
+      // draw pie chart
+      new Chart(document.getElementById("chart").getContext("2d")).Pie(pieData);
+    </script>
+</body>
+</div>
+</div>
+<h1 align="center">Summarization of Top 3 frequent speakers</h1>
+<div align="center" style="grid-template-columns: auto auto auto; display: grid;">
+
+  <div style="padding: 5px">
+    <h1>Jeff Alvarez</h1>
+    <div>
+      <p>{{participant[0]}}</p>
+    </div>
+  </div>
+  <div style="padding: 5px">
+    <h1>Vicki Hollub</h1>
+    <div>
+      <p>{{participant[1]}}</p>
+    </div>
+  </div>
+  <div style="padding: 5px">
+    <h1>Cedric Burgher</h1>
+    <div>
+      <p>{{participant[2]}}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

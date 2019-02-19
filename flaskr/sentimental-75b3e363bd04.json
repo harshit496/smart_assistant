@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sentimental-232022",
+  "private_key_id": "75b3e363bd043c387204cb35f9ce06d426a5ea49",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDOyMB9qoaje/+V\n4JZsWL7ZqE4N990eSq49aMb+lkBMzCiPh+lK7k3nC+Gm3IYV9yhYjwh6B4t/V7CA\nijzHKZS4pInujLS6dGkFZfPJldr2uhnhH69uM/HlzE58GQ64z6fwyFGQ3Vec2idD\n1nwbr5pKcTqH8/ieoGiwKq65j5MtYRaEVjeBfTL5aElW24gIRoXPDu7zYTsUunuZ\nUlTNIOuGhBrn3JmpEIcOIhQCul+9PJGtK8v/Cv+ZhZ+j+1Z81LBU+2mrQR1iBN12\nLvLEHEQZP7YRnPKJa8tM3rUEvx0tPhNVAWUhgvCD6ynGkkSCPGUYIeRSvOkypvcW\n1MKxOx4DAgMBAAECggEAQw9EqZxTNJKCdRMUBUgUgJa91XbUDT5P2ldv7WFBsgYl\ng0KizCuTNQIb6Fas31O7kFi2eYiX2zDPaygphLc95VFq7+NOuwcEhf0lvfKsw4Xf\n3au+Y0FSSeFjdIhVx2aEgqgcF5xIjPQMdsoIjpv4r/qfbjaXIq5HtRXqewAOTVEQ\nriSqD4Om98ustBihi/yoRnB1G11M+IxZBzJmqnCgkIAMeYLk24l/JbM6wLaSwVbC\naN4QVmnIzxZiLKjz6uk139J0zdmv+VWUC9bsaMZc++0Db0pxcA86YNUN9BNCT4mf\nFkVct9M02FOU1lnjTcTUmDFRhhWYzd/m07QhZKFedQKBgQD8uvxLNGreZ6K4834v\nYWv5/MBpKnPTNQi5yaKLF7o1b08j6HybKzM1c3WY6wnKoWPWrgAaLrKK/iND6Jv1\ntlvxSdnOPHWIYzQFeBsspXVTlkbFefdXETWjTqXAM2/pZnw6zcJdkEe7h1Jz0yQO\nDU+AY05OU7/QdAzni+0H2VrIdwKBgQDRdZkDQDR0Sm7dE2xoLSwA/SLe5X/YglXN\n1nZ/RylB3DPmLpG0qYYOVgraxGsSGgDnYBRkE0Eju1sFDIx/eUqS9UcMOacIiZk4\nk7CB5/VKIrI4BaNSbynoOce5IG5Q6OyDlOsA1PSjjE0aEgQqgAeAqmutLY86leSa\n8evUfXgF1QKBgC2zdmn3CZg8L124kknpGQh0nyqlRZqczX4jKyRx3vdIsIvyv42j\nqzfwMAS+A+BDfPVWM6iIZzrhJ+lgx8sP9eJVE3DK2AoYvlB63pcdOHEsDJIrMwHo\nl8V3NFvkMUmIgdB0YsBelcogd1WAidWMrKKv0noxhM8iHS9Fy1APCu6TAoGASzmx\n34IClLVaxZlBONToVd6T1HuWA7sjd86LNkDnZ1jfZs7Y04qCs8lhEpqyXYjrRC20\nhRCJN30FPnX4S5vTFZ5zisd13tIULkaUgMM+zAZT/VzBAE0ePuHpgepM1FAjCUrF\nb8ILrmUoF7HavyzGBQavrz2KkB7fQGqcKO962JUCgYBJ5DWfbY6A/PG98ZXGeCCS\n5C45IiVwuDs4tbpbV9oNWItdEESDIArOjQuaDkGBxItc717NhMLQbzTsRiSbWsm9\nn5Z5vXWcjtZLrp0z8i27qFEC0PhdXd800CJ+cOrIgUaJCOnvGI3RW1Vw2SxTXr6u\nFjs026bOsmllnH5sJoRoNg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "stocklearning@sentimental-232022.iam.gserviceaccount.com",
+  "client_id": "105997173391880866421",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/stocklearning%40sentimental-232022.iam.gserviceaccount.com"
+}

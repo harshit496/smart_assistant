@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block header %}
+<h1 align="center">{% block title %}Sentimental Analysis of News Articles{% endblock %}</h1> {% endblock %} {% block content %}
+<p align="center">Positive News Article</p>
+<p align="center"><a href="https://finance.yahoo.com/news/occidental-petroleum-gain-focus-permian-214709577.html">https://finance.yahoo.com/news/occidental-petroleum-gain-focus-permian-214709577.html<a></p>
+	<div align="center" class="row" style="background-color:#e8e8e8; padding: 15px;">
+		<div style="background-color:#fff; padding: 5px;">
+			<p style="color: #9BDA9B;">{{good[1]}} {{good[2]}}</p> 
+    <p align="center" style="color:#000;">{{good[0]}}</p>
+
+  </div>
+</div>
+
+<p align="center" style="color:#000;">Negative News Article</p>
+<p align="center"><a href="https://www.fool.com/investing/2018/11/05/why-occidental-petroleum-corporation-plummeted-nea.aspx">hhttps://www.fool.com/investing/2018/11/05/why-occidental-petroleum-corporation-plummeted-nea.aspx<a></p>
+	<div align="center" class="row" style="background-color:#e8e8e8; padding: 15px;">
+		<div style="background-color:#fff; padding: 5px;">
+			<p style="color: #FF0000;">{{bad[1]}} {{bad[2]}}</p> 
+    <p align="center" style="color:#000;">{{bad[0]}}</p>
+
+  </div>
+</div>
+{% endblock %}

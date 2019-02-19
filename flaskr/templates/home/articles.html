@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block header %}
+<h1 align="center">{% block title %}Articles{% endblock %}</h1> {% endblock %} {% block content %}
+<p align="center">{{name}}</p>
+
+{% for articles in articles %}
+
+<div align="center" class="row" style="background-color:#e8e8e8; padding: 15px;">
+    <div style="background-color:#fff; padding: 5px;">
+        <h1><a href="{{  articles['url']}}">{{articles['title']}}</a></h1>
+        <p>{{articles['author']}}</p>
+        <p>{{articles['description']}}</p>
+    </div>
+</div>
+{% endfor %} {% endblock %}

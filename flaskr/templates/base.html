@@ -1,0 +1,14 @@
+<!doctype html>
+<title>{% block title %}{% endblock %}Nesh</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<h1 align="center" ><a href="{{url_for('homepage')}}">Nesh</a></h1>
+<h1 align="center">Smart Assistant for Oil & Gas</h1>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>

@@ -1,0 +1,7 @@
+flask
+newsapi-python
+flask_googlecharts
+alpha_vantage
+google.cloud
+werkzeug
+nltk
