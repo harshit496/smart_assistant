@@ -1,5 +1,4 @@
-# smart_assistant
-
+# Smart Assistant
 <h1> Prerequisites </h1>
 1. Python 3.7 or greater. <br />
 2. Then git clone this repo and type Terminal 'pip install -r requirements.txt' <br />
